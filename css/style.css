@@ -1,0 +1,44 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.al-nav-bg-color{
+    background-color: #2c3e50;
+}
+
+.al-scale-on-hover{
+    transition: transform 300ms;
+}
+
+.al-scale-on-hover:hover{
+    transform: scale(1.1);
+}
+
+.al-bg-green{
+    background-color: #1abc9c;
+}
+
+.al-shadow{
+    filter: drop-shadow(6px 1px 20px #0e725e);
+}
+
+.al-button{
+    padding: 0.5rem 0.8rem;
+    background-color: #1abc9c;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 300ms;
+}
+
+.al-button:hover{
+    color: white;
+    background-color: #ccb2a3;
+}
+
+@media screen and (min-width: 768px){
+    #jumbo h6{
+        font-size: 1.3rem;
+    }
+}
