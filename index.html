@@ -8,7 +8,7 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- /bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
     <title>html-css-bootstrap-freelancer</title>
 </head>
@@ -24,9 +24,9 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <div class="d-flex gap-3">
-                    <a href="#portfolio" class="text-white text-decoration-none al-scale-on-hover">portfolio</span>
+                    <a href="#portfolio" class="text-white text-decoration-none al-scale-on-hover">portfolio</a>
                         <a href="#about" class="text-white text-decoration-none al-scale-on-hover">about</a>
-                        <a href="#" class="text-white text-decoration-none al-scale-on-hover">contact</a>
+                        <a href="#contact" class="text-white text-decoration-none al-scale-on-hover">contact</a>
                 </div>
             </div>
         </div>
@@ -41,8 +41,10 @@
                             <img src="./img/avatar.svg" alt="avatar" class="img-fluid al-shadow">
                         </div>
                         <h1>start bootstrap</h1>
-                        <div class="col-3 col-md-2">
-                            <img src="./img/star.png" alt="star" class="img-fluid">
+                        <div class="col-6 mt-2 mb-3">
+                            <div class="al-star">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                         <h6>graphic artist - web designer - illustrator</h6>
                     </div>
@@ -52,13 +54,13 @@
 
         <section id="portfolio">
             <div class="container">
-                <div class="row text-uppercase">
-                    <div class="col-12 gy-5">
-                        <h2 class="d-flex justify-content-center">portfolio</h2>
-                    </div>
-                    <div class="col-12 gy-2">
-                        <div class="col-2 col-md-1 mx-auto mt-3 mb-3">
-                            <img src="./img/logo.png" alt="logo" class="img-fluid">
+                <div class="row text-uppercase mt-5">
+                    <h2 class="text-center pt-1 pb-3">portfolio</h2>
+                    <div class="col-12 mb-3 d-flex justify-content-center">
+                        <div class="col-6">
+                            <div class="al-star al-dark">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 gy-4">
@@ -102,9 +104,11 @@
                     <div class="col-12 gy-5">
                         <h2 class="d-flex justify-content-center text-uppercase">about</h2>
                     </div>
-                    <div class="col-12">
-                        <div class="col-3 col-md-2 mx-auto mb-1">
-                            <img src="./img/star.png" alt="star" class="img-fluid">
+                    <div class="col-12 pt-2 pb-4 d-flex justify-content-center">
+                        <div class="col-6">
+                            <div class="al-star">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="col-10 d-md-flex mx-auto">
@@ -125,7 +129,78 @@
                 </div>
             </div>
         </section>
+
+        <section id="contact" class="container">
+            <div class="row my-5 text-capitalize">
+                <h2 class="text-center text-uppercase">contact me</h2>
+                <div class="col-12 my-3 d-flex justify-content-center">
+                    <div class="col-6">
+                        <div class="al-star al-dark">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="text-capitalize">
+                    <h5><label for="name">name</label></h5>
+                    <div>
+                        <input type="text" name="name" id="name" required class="w-100 border-0 border-bottom">
+                    </div>
+
+                    <h5><label for="email" class="pt-4">email address</label></h5>
+                    <div>
+                        <input type="text" name="email" id="email" required class="w-100 border-0 border-bottom">
+                    </div>
+
+                    <h5><label for="phone" class="pt-4">phone number</label></h5>
+                    <div>
+                        <input type="text" name="phone" id="phone" required class="w-100 border-0 border-bottom">
+                    </div>
+
+                    <h5><label for="message" class="pt-4">message</label></h5>
+                    <div>
+                        <textarea name="message" id="message" rows="4" required class="w-100 border-0 border-bottom"></textarea>
+                    </div>
+
+                    <input type="submit" value="Send" class="my-5">
+                </form>
+            </div>
+        </section>
+
+        <section class="al-last-section-bg">
+            <div class="container">
+                <div class="row text-center text-white py-4">
+                    <div class="col-12 pb-3 col-md-4 pb-md-0">
+                        <h5 class="text-uppercase">location</h5>
+                        <div class="text-capitalize">2215 john daniel drive clark, MO</div>
+                        <div>54243</div>
+                    </div>
+
+                    <div class="col-12 pb-3 col-md-4 pb-md-0">
+                        <h5 class="text-uppercase">around the web</h5>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#"><i class="fa-brands fa-facebook-f al-round"></i></a>
+                            <a href="#"><i class="fa-brands fa-google-plus-g al-round"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter al-round"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in al-round"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <h5 class="text-uppercase">about freelancer</h5>
+                        <p>Freelance is a free to use, open source Bootstrap Theme created by <a href="#">Start Bootstrap</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="al-bg-footer d-flex justify-content-center align-items-center gap-2 text-white text-capitalize">
+        <span>copyright</span>
+        <i class="fa-solid fa-copyright"></i>
+        <span>your website 2019</span>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
